@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "ImportExaminations";
+}
+
+
+@using (Html.BeginForm("ImportExaminationsMain", "HealthExaminations", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Import Excel</button>
+}
